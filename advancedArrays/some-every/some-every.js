@@ -67,3 +67,13 @@ function hasCertainValue(arr, key, searchValue){
         return value[key] === searchValue;
     })
 }
+
+
+
+////
+
+function myfind(arr, func){
+    for(let i in arr){
+        if(func(arr[i]) === true) return arr[i];
+    }
+}
