@@ -43,3 +43,37 @@ function hasOnlyOddNumbers(arr){
         return num % 2 !== 0;
     })
 }
+
+//////NO DUPLICATES/////
+
+function hasNoDuplicates(arr){
+    return arr.every(function(num){
+        return arr.indexOf(num) === arr.lastIndexOf(num);
+    })
+}
+
+/////has certain key /////
+
+function hasCertainKey(arr, key){
+    return arr.every(function(object){
+        return key in object;
+    })
+}
+
+//////has certain value /////
+
+function hasCertainValue(arr, key, searchValue){
+    return arr.every(function(value){
+        return value[key] === searchValue;
+    })
+}
+
+
+
+////
+
+function myfind(arr, func){
+    for(let i in arr){
+        if(func(arr[i]) === true) return arr[i];
+    }
+}
