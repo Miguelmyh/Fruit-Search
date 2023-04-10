@@ -1,46 +1,59 @@
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-:focus {
- /* TODO */
+body{
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(34, 34, 34, 1) 0%, rgba(51, 121, 9, 1) 41%, rgba(84, 182, 201, 1) 100%);
+}
+.search-container{
+  height: 7vh;
+  width: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: linear-gradient(90deg, rgba(34, 34, 34, 1) 0%, rgba(51, 121, 9, 1) 41%, rgba(84, 182, 201, 1) 100%);
+  display: flex;
+  justify-content: center;
 }
 
-body {
-  /* TODO */
+.search-container input{
+  height: 100%;
+  width: 60%;
+  text-align: center;
+  opacity: 0.95;
+  border: none;
+  background-color: whitesmoke;
+  font-weight: bold;
+}
+.search-container input:hover{
+  opacity: 1;
 }
 
-input {
- /* TODO */
+.search-container:hover{
+  opacity: 1;
+  background-color: whitesmoke;
 }
 
-.search-container {
- /* TODO */
-}
-.search-container input,
-.search-container .suggestions {
-  /* TODO */
-}
-.search-container input {
- /* TODO */
-}
-.search-container .suggestions {
-   /* TODO */
+.suggestions {
+  width: 100%;
+  position: fixed;
+  margin-top: 7vh;
+  top: 0;
+  max-height: 40vh;
+  overflow-y:scroll;
+  background-color: whitesmoke;
+  list-style: none;
 }
 
-ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  /* TODO */
-}
+
 ul li {
-  /* TODO */
-}
-ul li:hover {
-  /* TODO */
+  padding: 10px 20px;
 }
 
-input {
-   /* TODO */
+ul li:hover {
+  background-color: #c1c1c1;
 }
