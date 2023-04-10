@@ -33,6 +33,9 @@ body{
   opacity: 1;
 }
 
+.search-container input:focus {
+  opacity: 1;
+}
 .search-container:hover{
   opacity: 1;
   background-color: whitesmoke;
